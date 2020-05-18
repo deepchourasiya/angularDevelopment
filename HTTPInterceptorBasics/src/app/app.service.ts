@@ -15,27 +15,29 @@ export class AppService {
   constructor(private http: HttpClient) {}
 
   getAllPosts(): Observable<any> {
-    const headers = new HttpHeaders({
-      AuthToken: 'AkashDeep',
-    });
+    // const headers = new HttpHeaders({
+    //   AuthToken: 'AkashDeep',
+    // });
 
-    const params = new HttpParams().append('age', '100');
+    let params = new HttpParams().append('age', '100');
+
+    params = params.append('house' , 'blue');
 
     return this.http.get<any>(
       'https://jsonplaceholder.typicode.com/posts'
 
-      // , {
-      //   responseType: 'json',
-      //   observe: 'response',
-      //   headers: headers,
-      //   params: params,
-      // })
+      , {
+        responseType: 'json',
+        observe: 'response',
+        // headers: headers,
+        params: params,
+      });
       // .pipe(retry(3), catchError(this.handleError)
 
       // .pipe(
       //   tap(response => console.log(response)),
       //   map(response => response.body)
-    );
+    // );
   }
 
   // handleError(error: HttpErrorResponse) {
