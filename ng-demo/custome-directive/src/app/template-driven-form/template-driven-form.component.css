@@ -1,0 +1,32 @@
+.form-center {
+  text-align: center;
+  background:#FAFAFA;
+  border-radius: 35px;
+  width: 36vw;
+  margin-left: 30vw;
+  padding: 15px;
+}
+
+/*
+.form-group {
+  text-align: center;
+  padding: 4px;
+}
+
+.form-control {
+  width: 30vw;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.label-font {
+  font-family: cursive;
+}
+
+.btn-primary {
+  background: #63aefb;
+  font-size: 14px;
+  font-family: cursive;
+  border-radius: 5px;
+  border-color: #586c82;
+} */

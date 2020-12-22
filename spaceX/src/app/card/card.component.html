@@ -1,0 +1,20 @@
+<!-- <div>
+  <div class="card" *ngFor="let card of data">
+    <img src={{card.links.mission_patch}}>
+  </div>
+</div> -->
+
+
+<div class="grid">
+  <article class="card product-item" *ngFor="let card of data">
+    <div class="card__image">
+      <img src={{card.links.mission_patch}} alt="A Book">
+    </div>
+    <div>
+      <h2 class="product__name">{{card.mission_name}}</h2>
+    </div>
+    <div>
+      <h2>{{card.mission_name}}</h2>
+    </div>
+  </article>
+</div>
